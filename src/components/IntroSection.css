@@ -1,0 +1,369 @@
+/* Intro Section Styles */
+.intro-section {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+  background: #000000 !important;
+  min-height: 100vh !important;
+  height: auto !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+  box-sizing: border-box;
+  overflow: visible;
+  z-index: 2;
+}
+
+.intro-section .container {
+  margin: 0 !important;
+  padding: 10px 50px 10px 50px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  max-width: 1400px !important;
+}
+
+.intro-section.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Intro Header */
+.intro-header {
+  text-align: center;
+  margin: 0 0 15px 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #10b981 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 5px;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.intro-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content Layout */
+.intro-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex: 1;
+}
+
+/* Single Bordered Card */
+.intro-card {
+  background: #000000;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.intro-card:hover {
+  border-color: #555555;
+  transform: translateY(-2px);
+}
+
+/* Photo Side */
+.intro-photo-side {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Text Side */
+.intro-text-side {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Profile Photo */
+.profile-photo-container {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+/* Text Container */
+.intro-text-container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Intro Name Section */
+.intro-name-section {
+  margin-bottom: 10px;
+}
+
+.intro-name {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.intro-role {
+  font-size: 20px;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin: 2px 0 0 0;
+  line-height: 1.2;
+}
+
+/* Intro Text Content */
+.intro-text-content {
+  margin-bottom: 10px;
+}
+
+/* Paragraphs Grid */
+.paragraphs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.paragraph-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.paragraph-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.intro-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  background: #000000;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.social-link:hover {
+  border-color: #555555;
+  color: #06b6d4;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .intro-content {
+    padding: 0 30px;
+  }
+  
+  .intro-section .container {
+    padding: 10px 40px 10px 40px !important;
+  }
+  
+  .intro-header {
+    margin-bottom: 10px;
+  }
+  
+  .intro-card {
+    gap: 30px;
+    padding: 25px;
+  }
+  
+  .profile-photo-container {
+    max-width: 350px;
+    height: 350px;
+  }
+  
+  .intro-name {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 0 !important;
+    min-height: 100vh !important;
+    height: auto;
+  }
+  
+  .intro-section .container {
+    height: auto;
+    justify-content: flex-start;
+    padding: 5px 20px 5px 20px !important;
+  }
+  
+  .intro-header {
+    margin-bottom: 10px;
+  }
+  
+  .intro-content {
+    padding: 0 15px;
+  }
+  
+  .intro-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .intro-photo-side {
+    justify-content: center;
+  }
+  
+  .intro-text-side {
+    text-align: left;
+  }
+  
+  .profile-photo-container {
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .paragraphs-grid {
+    gap: 10px;
+  }
+  
+  .paragraph-item {
+    padding: 12px;
+  }
+  
+  .intro-name {
+    font-size: 32px;
+  }
+  
+  .intro-role {
+    font-size: 18px;
+  }
+  
+  .intro-paragraph {
+    font-size: 15px;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-section .container {
+    padding: 5px 15px 5px 15px !important;
+  }
+  
+  .intro-content {
+    padding: 0 10px;
+  }
+  
+  .intro-card {
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .profile-photo-container {
+    max-width: 250px;
+    height: 250px;
+  }
+  
+  .paragraphs-grid {
+    gap: 8px;
+  }
+  
+  .paragraph-item {
+    padding: 10px;
+  }
+  
+  .intro-name {
+    font-size: 28px;
+  }
+  
+  .intro-role {
+    font-size: 16px;
+  }
+  
+  .intro-paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
