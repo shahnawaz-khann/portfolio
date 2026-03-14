@@ -81,7 +81,7 @@ export const IntroSection = () => {
                 
                 <div className="social-links">
                   <a 
-                    href="https://www.instagram.com/shahnawaz" 
+                    href="https://www.instagram.com/shahnawaz-khann" 
                     className="social-link" 
                     aria-label="Instagram"
                     target="_blank"

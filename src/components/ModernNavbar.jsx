@@ -164,7 +164,7 @@ const ModernNavbar = () => {
                 />
                 <IconButton 
                   icon={<FaInstagram />} 
-                  href="https://www.instagram.com/shahnawaz" 
+                  href="https://www.instagram.com/shahnawaz-khann" 
                   ariaLabel="Instagram"
                   mobile={true}
                 />
@@ -236,7 +236,7 @@ const ModernNavbar = () => {
                   />
                   <IconButton 
                     icon={<FaInstagram />} 
-                    href="https://www.instagram.com/shahnawaz" 
+                    href="https://www.instagram.com/shahnawaz-khann" 
                     ariaLabel="Instagram"
                     mobile={true}
                   />
@@ -378,7 +378,7 @@ const ModernNavbar = () => {
           />
           <IconButton 
             icon={<FaInstagram />} 
-            href="https://www.instagram.com/shahnawaz" 
+            href="https://www.instagram.com/shahnawaz-khann" 
             ariaLabel="Instagram"
           />
         </div>
